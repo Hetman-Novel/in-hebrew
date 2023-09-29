@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+   <link rel="profile" href="http://gmpg.org/xfn/11">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/spollers.css">
+   <link rel="stylesheet" href="assets/css/pop-up.css">
+   <link rel="stylesheet" href="assets/css/new-style.css">
+
+   <title>Filling stages</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header background-header lock-padding">
+            <div class="container">
+                <div class="header__content">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="files/index.html" class="header__logo">LOGO</a>
+                <div class="header__menu">
+                    <ul>
+                    <li><a href="#">ביקורות</a></li>
+                    <li><a href="#">חֲדָשׁוֹת</a></li>
+                    <li><a href="#" class="is-active">המבצעים המובילים של החודש</a></li>
+                    <li><a href="#">בלוג</a></li>
+                    </ul>
+                    <a href="tel:0500000000" class="header__phone"><span>050 XXX XXXX</span></a>
+                    <a href="mailto:ustomer@mail.com" class="header__email"><span>customer@mail.com</span></a>
+                </div>
+                <a href="#" class="header__sign-in">התחבר או הרשמה</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="filling-stages">
+                <div class="container">
+                    <div class="filling-stages__block step-one">
+                        <div class="filling-stages__wrapProgress">
+                            <div class="filling-stages__progress">progress</div>
+                        </div>
+                        <p class="filling-stages__stage">שלב <span class="one">1</span> <span class="two">2</span> <span class="three">3</span> <span class="four">4</span> <span class="five">5</span> מתוך 5 - עליי</p>
+                        <form action="#" class="filling-stages__form" id="filling-stages">
+                            <div id="step-one" class="filling-stages__stepBlock step-active">
+                                <h1 class="filling-stages__title">איך אתה מציג את עצמך ללקוחות?</h1>
+                                <div class="filling-stages__blockText">
+                                    <p>הזן את פרטי הקשר שלך ובחר את קטגוריות התפקיד בהן תרצה לעבוד. כל העניין ייקח בערך 3 דקות.</p>
+                                </div>
+                                <div class="filling-stages__wrap-field">
+                                    <button type="button" class="filling-stages__btn-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path d="M7.20868 4.1817L26.5811 12.192C27.3972 12.5294 27.9436 13.2863 28.007 14.1672C28.0704 15.0481 27.638 15.8754 26.8786 16.3262L20.257 20.257L16.3262 26.8786C15.8754 27.638 15.0482 28.0704 14.1672 28.007C13.2846 27.9436 12.5288 27.3958 12.192 26.5811L4.1817 7.20868C3.81699 6.32667 4.00968 5.35948 4.68458 4.68458C5.35948 4.00968 6.32667 3.81699 7.20868 4.1817ZM5.48122 6.67139L13.4914 26.0438C13.6262 26.3695 13.9164 26.5791 14.2681 26.6044C14.6197 26.6297 14.9371 26.4639 15.1171 26.1607L18.8604 19.8547L13.9199 14.9142C13.6453 14.6396 13.6453 14.1944 13.9199 13.9199C14.1945 13.6453 14.6397 13.6453 14.9143 13.9199L19.8548 18.8603L26.1607 15.1171C26.4638 14.9371 26.6297 14.6197 26.6044 14.2681C26.5791 13.9165 26.3696 13.6263 26.0438 13.4915L6.67139 5.48122C6.14968 5.26548 5.77984 5.57799 5.67892 5.67892C5.57799 5.77984 5.26549 6.14968 5.48122 6.67139Z" fill="#474BC6"/>
+                                        </svg>
+                                    </button>
+                                    <label for="your-city" class="filling-stages__label">העיר שלך</label>
+                                    <input type="text" name="your-city" id="your-city" class="filling-stages__field">
+                                </div>
+                                <label for="first-name" class="filling-stages__label">שֵׁם</label>
+                                <input type="text" id="first-name" class="filling-stages__field">
+                                <label for="last-name" class="filling-stages__label">שֵׁם מִשׁפָּחָה</label>
+                                <input type="text" id="last-name" class="filling-stages__field">
+                                <label for="date-of-birth" class="filling-stages__label">תאריך לידה</label>
+                                <input maxlength="10" type="text" id="date-of-birth" class="filling-stages__field">
+                                <div class="filling-stages__blockButtons">
+                                    <button id="btn-to-two" type="button" class="filling-stages__button next">הבא</button>
+                                    <button type="button" class="filling-stages__button prev no-active">חזור</button>
+                                </div>
+                                <p class="filling-stages__you-confirm">על ידי המשך האימות, אתה מאשר שאתה עובר אותו בפעם הראשונה, סיפקת מידע אמין על עצמך ומסכים לעיבוד הנתונים האישיים.</p>
+                            </div>
+                            <div id="step-two" class="filling-stages__stepBlock">
+                                <h2 class="filling-stages__title">קוליה, איך אוכל ליצור איתך קשר?</h2>
+                                <div class="filling-stages__blockText">
+                                    <p>לקוחות יפנו אליך בטלפון או בצ'אט. אנו נשלח הודעות במייל.</p>
+                                </div>
+                                <label for="email" class="filling-stages__label">אימייל</label>
+                                <input type="text" name="email" id="email" class="filling-stages__field">
+                                <label for="phone" class="filling-stages__label">טֵלֵפוֹן</label>
+                                <input type="text" name="phone" id="phone" class="filling-stages__field" placeholder="+972">
+                                <div class="filling-stages__blockButtons">
+                                    <button id="btn-to-three" type="button" class="filling-stages__button next">הבא</button>
+                                    <button id="btn-prev-to-one" type="button" class="filling-stages__button prev">חזור</button>
+                                </div>
+                            </div>
+                            <div id="step-three" class="filling-stages__stepBlock">
+                                <div class="filling-stages__blockPhoto">
+                                    <img src="images/svg/step-default-photo.svg" alt="">
+                                    <!--<img src="images/step-photo.png" class="filling-stages__selectedPhoto" alt="">-->
+                                </div>
+                                <h2 class="filling-stages__title">קוליה זיריאנוב</h2>
+                                <a href="#filling-stages-add-a-picture" class="filling-stages__add_a_picture popup-link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11.903 10.2146C11.903 11.8153 10.6008 13.1176 9 13.1176C7.39924 13.1176 6.09753 11.8153 6.09753 10.2146C6.09753 8.61382 7.39924 7.31162 9 7.31162C10.6008 7.31162 11.903 8.61432 11.903 10.2146ZM18 6.09251V14.3377C18 15.4368 17.1088 16.328 16.0096 16.328H1.99038C0.891192 16.328 0 15.4368 0 14.3377V6.09251C0 4.99332 0.891192 4.10213 1.99038 4.10213H4.43855V3.41346C4.43855 2.45161 5.21778 1.67188 6.18013 1.67188H11.8199C12.7822 1.67188 13.5615 2.45161 13.5615 3.41346V4.10163H16.0096C17.1088 4.10213 18 4.99332 18 6.09251ZM13.3958 10.2146C13.3958 7.7908 11.4238 5.81883 9 5.81883C6.57671 5.81883 4.60474 7.7908 4.60474 10.2146C4.60474 12.6384 6.57671 14.6103 9 14.6103C11.4238 14.6103 13.3958 12.6384 13.3958 10.2146Z" fill="#575757"/></svg> הוסף תמונה</a>
+                                <div class="filling-stages__blockButtons">
+                                    <button id="btn-to-four" type="button" class="filling-stages__button next">הבא</button>
+                                    <button id="btn-prev-to-two" type="button" class="filling-stages__button prev">חזור</button>
+                                </div>
+                            </div>
+                            <div id="step-four" class="filling-stages__stepBlock">
+                                <h2 class="filling-stages__title">מה אתה רוצה לעשות?</h2>
+                                <div class="filling-stages__blockText">
+                                    <p>בחר את קטגוריות המשימות שבהן אתה רוצה לעבוד. אתה יכול לקבל כמה בו זמנית - אתה תמיד יכול לשנות אותם בפרופיל שלך</p>
+                                </div>
+                                <div data-spollers data-one-spoller class="block">
+                                    <div class="block__item">
+                                        <button tabindex="-1" type="button" data-spoller class="block__title _active">שירותי שליחים</button>
+                                        <div class="block__text">
+                                            <div class="block__content">
+                                                <label class="custom-checkbox">
+                                                    ניקיון האביב
+                                                    <input class="custom-checkbox__input" type="checkbox">
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox">
+                                                    ניקיון האביב
+                                                    <input class="custom-checkbox__input" type="checkbox">
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox checked">
+                                                    בחר את כל קטגוריות המשנה
+                                                    <input class="custom-checkbox__input" type="checkbox" checked>
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox checked">
+                                                    ניקיון האביב
+                                                    <input class="custom-checkbox__input" type="checkbox" checked>
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox checked">
+                                                    שטיפת חלונות
+                                                    <input class="custom-checkbox__input" type="checkbox" checked>
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox checked">
+                                                    ניקיון האביב
+                                                    <input class="custom-checkbox__input" type="checkbox" checked>
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                                <label class="custom-checkbox checked">
+                                                    שטיפת חלונות
+                                                    <input class="custom-checkbox__input" type="checkbox" checked>
+                                                    <span class="custom-checkbox__box"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item">
+                                        <button tabindex="-1" type="button" data-spoller class="block__title">תיקון ובנייה</button>
+                                        <div class="block__text">
+                                            <div class="block__text">
+                                                <div class="block__content">
+                                                    <label class="custom-checkbox">
+                                                        שטיפת חלונות
+                                                        <input class="custom-checkbox__input" type="checkbox">
+                                                        <span class="custom-checkbox__box"></span>
+                                                    </label>
+                                                    <label class="custom-checkbox">
+                                                        שטיפת חלונות
+                                                        <input class="custom-checkbox__input" type="checkbox">
+                                                        <span class="custom-checkbox__box"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filling-stages__blockButtons">
+                                    <button id="btn-to-five" type="button" class="filling-stages__button next">הבא</button>
+                                    <button id="btn-prev-to-three" type="button" class="filling-stages__button prev">חזור</button>
+                                </div>
+                            </div>
+                            <div id="step-five" class="filling-stages__stepBlock">
+                                <h2 class="filling-stages__title">ספר לנו על עצמך</h2>
+                                <div class="filling-stages__blockText">
+                                    <p>הסבר מדוע כדאי לעבוד איתך – זה יעזור ללקוחות. מה ראוי להזכיר:</p>
+                                </div>
+                                <div class="filling-stages__blockInfo">
+                                    <h4>על הניסיון שלך</h4>
+                                    <p>איפה ואיך למדת, איזה תעודות יש לך?</p>
+                                    <h4>על עצמי</h4>
+                                    <p>כישורים, יכולת ואיכות. מה הבחינו בכם הלקוחות?</p>
+                                    <h4>על היתרונות בעבודה איתך</h4>
+                                    <p>אילו יתרונות יקבל הלקוח אם יבחר בכם?</p>
+                                </div>
+                                <a href="#see-examples" class="filling-stages__see-examples popup-link">ראה דוגמאות</a>
+                                <label for="years-of-work-experience" class="filling-stages__label">שנים של ניסיון עבודה</label>
+                                <input type="text" name="years-of-work-experience" id="years-of-work-experience" class="filling-stages__field">
+                                <label for="about-myself" class="filling-stages__label">על עצמי</label>
+                                <textarea minlength="50" maxlength="400" name="about-myself" id="about-myself" class="filling-stages__field textarea"></textarea>
+                                <p class="filling-stages__from-to-characters">מ-50 עד 400 תווים</p>
+                                <div class="filling-stages__blockButtons">
+                                    <button type="submit" class="filling-stages__button next">להפוך למוציא לפועל</button>
+                                    <button id="btn-prev-to-four" type="button" class="filling-stages__button prev">חזור</button>
+                                </div>
+                                <p class="filling-stages__you-confirm">אתה יכול להשלים את הסיפור מאוחר יותר</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                <div class="footer__top">
+                    <a href="index.html" class="footer__logo">LOGO</a>
+                    <ul class="footer__menu">
+                    <li><a href="#">חֲדָשׁוֹת</a></li>
+                    <li><a href="#">ביקורות</a></li>
+                    <li><a href="#">בלוג</a></li>
+                    <li><a href="#">המבצעים המובילים של החודש</a></li>
+                    </ul>
+                    <div class="footer__contacts">
+                    <a href="tel:0500000000" class="footer__phone"><span>050 XXX XXXX</span></a>
+                    <a href="mailto:ustomer@mail.com" class="footer__email"><span>customer@mail.com</span></a>
+                    </div>
+                    <div class="footer__applications">
+                    <a href="#" class="footer__link">
+                    <img src="images/logo-google-play.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__link">
+                    <img src="images/logo-app-store.svg" alt="">
+                    </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="main__text md color-dark2">© 2022 LOGO) תנאים והגבלות
+                    </div>
+                    <div class="footer__social">
+                    <a href="#"><img src="images/icon-linkedin.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-skype.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+		
+		<div id="filling-stages-add-a-picture" class="popup"> <!-- popup-video -->
+			<div class="popup__body">
+				<div class="popup__content"> <!-- popup__content-image -->
+					<a href="" class="popup__close close-popup">&times;</a>
+					<h3 class="popup__title">איך לגלות שהתמונה מתאימה?</h3>
+					<div class="popup__items">
+						<div class="popup__item">
+							<div class="popup__blockImage">
+								<img src="images/step-upload-photo-no-valid-3.jpg" alt="">
+								<p class="no-valid">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<g clip-path="url(#clip0_1_43002)">
+										<path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#F14336"/>
+										<path d="M11.8317 11.0001L15.8275 7.00425C16.0575 6.77425 16.0575 6.4025 15.8275 6.1725C15.5975 5.9425 15.2258 5.9425 14.9958 6.1725L11 10.1683L7.00423 6.1725C6.77424 5.9425 6.40249 5.9425 6.17249 6.1725C5.9425 6.4025 5.9425 6.77425 6.17249 7.00425L10.1683 11.0001L6.17249 14.9959C5.9425 15.2259 5.9425 15.5977 6.17249 15.8277C6.2872 15.9424 6.43778 16 6.58836 16C6.73894 16 6.88952 15.9423 7.00423 15.8277L11 11.8318L14.9958 15.8277C15.1105 15.9424 15.261 16 15.4116 16C15.5622 16 15.7128 15.9423 15.8275 15.8277C16.0575 15.5977 16.0575 15.2259 15.8275 14.9959L11.8317 11.0001Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1_43002">
+											<rect width="22" height="22" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</p>
+							</div>
+						</div>
+						<div class="popup__item">
+							<div class="popup__blockImage">
+								<img src="images/step-upload-photo-no-valid-2.jpg" alt="">
+								<p class="no-valid">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<g clip-path="url(#clip0_1_43002)">
+										<path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#F14336"/>
+										<path d="M11.8317 11.0001L15.8275 7.00425C16.0575 6.77425 16.0575 6.4025 15.8275 6.1725C15.5975 5.9425 15.2258 5.9425 14.9958 6.1725L11 10.1683L7.00423 6.1725C6.77424 5.9425 6.40249 5.9425 6.17249 6.1725C5.9425 6.4025 5.9425 6.77425 6.17249 7.00425L10.1683 11.0001L6.17249 14.9959C5.9425 15.2259 5.9425 15.5977 6.17249 15.8277C6.2872 15.9424 6.43778 16 6.58836 16C6.73894 16 6.88952 15.9423 7.00423 15.8277L11 11.8318L14.9958 15.8277C15.1105 15.9424 15.261 16 15.4116 16C15.5622 16 15.7128 15.9423 15.8275 15.8277C16.0575 15.5977 16.0575 15.2259 15.8275 14.9959L11.8317 11.0001Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1_43002">
+											<rect width="22" height="22" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</p>
+							</div>
+						</div>
+						<div class="popup__item">
+							<div class="popup__blockImage">
+								<img src="images/step-upload-photo-no-valid-1.jpg" alt="">
+								<p class="no-valid">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<g clip-path="url(#clip0_1_43002)">
+										<path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#F14336"/>
+										<path d="M11.8317 11.0001L15.8275 7.00425C16.0575 6.77425 16.0575 6.4025 15.8275 6.1725C15.5975 5.9425 15.2258 5.9425 14.9958 6.1725L11 10.1683L7.00423 6.1725C6.77424 5.9425 6.40249 5.9425 6.17249 6.1725C5.9425 6.4025 5.9425 6.77425 6.17249 7.00425L10.1683 11.0001L6.17249 14.9959C5.9425 15.2259 5.9425 15.5977 6.17249 15.8277C6.2872 15.9424 6.43778 16 6.58836 16C6.73894 16 6.88952 15.9423 7.00423 15.8277L11 11.8318L14.9958 15.8277C15.1105 15.9424 15.261 16 15.4116 16C15.5622 16 15.7128 15.9423 15.8275 15.8277C16.0575 15.5977 16.0575 15.2259 15.8275 14.9959L11.8317 11.0001Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1_43002">
+											<rect width="22" height="22" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</p>
+							</div>
+						</div>
+						<div class="popup__item">
+							<div class="popup__blockImage">
+								<img src="images/step-upload-photo-valid.jpg" alt="">
+								<p class="valid">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<g clip-path="url(#clip0_1_42995)">
+										<path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#27D935"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.20111 11.1503L9.63882 14.7867C9.90696 15.0711 10.3429 15.0711 10.611 14.7867L16.7989 8.24112C17.067 7.95748 17.067 7.49637 16.7989 7.21273C16.5308 6.92909 16.0948 6.92909 15.8267 7.21273L10.1249 13.2441L7.17329 10.1219C6.90515 9.83825 6.46925 9.83825 6.20111 10.1219C5.93296 10.4055 5.93296 10.8666 6.20111 11.1503Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1_42995">
+											<rect width="22" height="22" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h4 class="popup__title-above-list">תמונה מתאימה:</h4>
+					<ul class="popup__list">
+						<li>התמונה מציגה אותך בתקריב או בתקריב בינוני</li>
+						<li>התמונה ברורה, בגודל של לפחות 100x200 פיקסלים</li>
+					</ul>
+					<h4 class="popup__title-above-list">התמונה לא מתאימה</h4>
+					<ul class="popup__list">
+						<li>זו לא התמונה שלך</li>
+						<li>יש זרים בפריים</li>
+						<li>אתה מרכיב משקפיים כהים או מופנה מהמצלמה</li>
+					</ul>
+					<button type="button" class="popup__upload-a-photo">העלה תמונה</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="see-examples" class="popup"> <!-- popup-video -->
+			<div class="popup__body">
+				<div class="popup__content"> <!-- popup__content-image -->
+					<a href="" class="popup__close close-popup">&times;</a>
+					<h3 class="popup__title">ספר לנו על עצמך</h3>
+					<div class="popup__blockInfos">
+						<div class="popup__blockInfo">
+							<h4>1</h4>
+							<p>Lorem Ipsum הוא טקסט פסאודו-לטיני המשמש בעיצוב אתרים, טיפוגרפיה, כתיבה והדפסה במקום אנגלית כדי להדגיש אלמנטים עיצוביים על פני תוכן. זה נקרא גם טקסט מציין מיקום (או מילוי). זהו כלי שימושי לפריסות. זה עוזר לך לשרטט אלמנטים חזותיים במסמך או במצגת, כגון טיפוגרפיה, גופן או פריסה.</p>
+						</div>
+						<div class="popup__blockInfo">
+							<h4>2</h4>
+							<p>Lorem Ipsum הוא טקסט פסאודו-לטיני המשמש בעיצוב אתרים, טיפוגרפיה, כתיבה והדפסה במקום אנגלית כדי להדגיש אלמנטים עיצוביים על פני תוכן. זה נקרא גם טקסט מציין מיקום (או מילוי). זהו כלי שימושי לפריסות. זה עוזר לך לשרטט אלמנטים חזותיים במסמך או במצגת, כגון טיפוגרפיה, גופן או פריסה.</p>
+						</div>
+						<div class="popup__blockInfo">
+							<h4>3</h4>
+							<p>Lorem Ipsum הוא טקסט פסאודו-לטיני המשמש בעיצוב אתרים, טיפוגרפיה, כתיבה והדפסה במקום אנגלית כדי להדגיש אלמנטים עיצוביים על פני תוכן. זה נקרא גם טקסט מציין מיקום (או מילוי). זהו כלי שימושי לפריסות. זה עוזר לך לשרטט אלמנטים חזותיים במסמך או במצגת, כגון טיפוגרפיה, גופן או פריסה.</p>
+						</div>
+						<div class="popup__blockInfo">
+							<h4>4</h4>
+							<p>Lorem Ipsum הוא טקסט פסאודו-לטיני המשמש בעיצוב אתרים, טיפוגרפיה, כתיבה והדפסה במקום אנגלית כדי להדגיש אלמנטים עיצוביים על פני תוכן. זה נקרא גם טקסט מציין מיקום (או מילוי). זהו כלי שימושי לפריסות. זה עוזר לך לשרטט אלמנטים חזותיים במסמך או במצגת, כגון טיפוגרפיה, גופן או פריסה.</p>
+						</div>
+					</div>
+					<a href="" class="popup__i-understood-btn close-popup">הבנתי, תודה</a>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/spollers.js"></script>
+    <script src="assets/js/pop-up.js"></script>
+    <script src="assets/js/new-script.js"></script>
+</body>
+</html>

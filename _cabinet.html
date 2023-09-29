@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link href="favicon.png" rel="shortcut icon">
+  <link href="favicon.png" rel="apple-touch-icon-precomposed">
+
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header withBg">
+  <div class="container">
+    <div class="header__content">
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <a href="index.html" class="header__logo">LOGO</a>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">ביקורות</a></li>
+          <li><a href="#">חֲדָשׁוֹת</a></li>
+          <li><a href="#" class="is-active">המבצעים המובילים של החודש</a></li>
+          <li><a href="#">בלוג</a></li>
+        </ul>
+        <a href="tel:0500000000" class="header__phone"><span>050 XXX XXXX</span></a>
+        <a href="mailto:ustomer@mail.com" class="header__email"><span>customer@mail.com</span></a>
+      </div>
+      <a href="#" class="header__sign-in">התחבר או הרשמה</a>
+    </div>
+  </div>
+</header>
+
+<section class="cabinet">
+  <div class="container">
+    <div class="cabinet__content">
+      <div class="cabinet__body">
+        <div class="cabinet__top">
+          <div class="main__title font-bold">שלום מריה!</div>
+          <div class="cabinet__top-views">
+            <div class="icon">
+              <img src="images/icon-eye.svg" alt="">
+            </div>
+            <div class="main__text color-grey6 lg">0 צפיות בפרופיל</div>
+          </div>
+        </div>
+        <div class="cabinet__info">
+          <div class="cabinet__info-lside">
+            <div class="cabinet__info-photo">
+              <!--            TODO: IF you don't need img, remove <img>-->
+              <img src="images/ph1.png" alt="">
+            </div>
+            <button class="btn-blue withIcon uploadFile">
+              <img src="images/icon-camera-white.svg" alt="">
+              הגש מועמדות לעבודה
+            </button>
+          </div>
+          <div class="cabinet__info-rside">
+            <div class="main__text color-grey lg2 textWithIcon">
+              <img src="images/icon-loc-grey.svg" alt="">
+              קמנסקויה
+            </div>
+            <div class="main__text color-grey6">אין דירוגים</div>
+            <div class="cabinet__tabs">
+              <div class="cabinet__tabs-buttons">
+                <div class="cabinet__tabs-button is-open" data-open="tab-1">עליי</div>
+                <div class="cabinet__tabs-button" data-open="tab-2">חשבון</div>
+                <div class="cabinet__tabs-button" data-open="tab-3">ביטוח</div>
+                <div class="cabinet__tabs-button settings" data-open="tab-settings">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_89_2983)">
+                      <path
+                          d="M20.7928 8.61117L19.0694 8.39208C18.9273 7.95483 18.7523 7.53317 18.5478 7.13258L19.6121 5.76217C20.0429 5.20758 19.9925 4.42475 19.5003 3.94808L18.0565 2.50433C17.5753 2.0075 16.7924 1.958 16.2369 2.38792L14.8683 3.45217C14.4677 3.24775 14.0461 3.07267 13.6079 2.93058L13.3888 1.21C13.3063 0.51975 12.7206 0 12.0267 0H9.97333C9.27942 0 8.69367 0.51975 8.61117 1.20725L8.39208 2.93058C7.95392 3.07267 7.53225 3.24683 7.13167 3.45217L5.76217 2.38792C5.2085 1.958 4.42567 2.0075 3.94808 2.49975L2.50433 3.94258C2.0075 4.42475 1.95708 5.20758 2.38792 5.76308L3.45217 7.13258C3.24683 7.53317 3.07267 7.95483 2.93058 8.39208L1.21 8.61117C0.51975 8.69367 0 9.27942 0 9.97333V12.0267C0 12.7206 0.51975 13.3063 1.20725 13.3888L2.93058 13.6079C3.07267 14.0452 3.24775 14.4668 3.45217 14.8674L2.38792 16.2378C1.95708 16.7924 2.0075 17.5753 2.49975 18.0519L3.9435 19.4957C4.42567 19.9916 5.20758 20.0411 5.76308 19.6112L7.13258 18.5469C7.53317 18.7523 7.95483 18.9273 8.39208 19.0685L8.61117 20.7882C8.69367 21.4802 9.27942 22 9.97333 22H12.0267C12.7206 22 13.3063 21.4803 13.3888 20.7928L13.6079 19.0694C14.0452 18.9273 14.4668 18.7523 14.8674 18.5478L16.2378 19.6121C16.7924 20.0429 17.5753 19.9925 18.0519 19.5003L19.4957 18.0565C19.9925 17.5743 20.0429 16.7924 19.6121 16.2369L18.5478 14.8674C18.7532 14.4668 18.9282 14.0452 19.0694 13.6079L20.7891 13.3888C21.4793 13.3063 21.9991 12.7206 21.9991 12.0267V9.97333C22 9.27942 21.4803 8.69367 20.7928 8.61117ZM11 15.5833C8.47275 15.5833 6.41667 13.5273 6.41667 11C6.41667 8.47275 8.47275 6.41667 11 6.41667C13.5273 6.41667 15.5833 8.47275 15.5833 11C15.5833 13.5273 13.5273 15.5833 11 15.5833Z"
+                          fill="#EBB057"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_89_2983">
+                        <rect width="22" height="22" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div class="cabinet__tabs-contents">
+                <div class="cabinet__tabs-content is-open tab-1">
+                  <div class="main__title font-bold">קצת על עצמך <a href="#" class="main__link main__link--underline">לְהוֹסִיף</a>
+                  </div>
+                  <div class="main__strong font-bold color-grey  mTop20">אין לך דירוגים כרגע</div>
+                  <div class="main__text color-grey6">לקוחות מעריכים את כל המבצעים לפי קריטריונים שונים כמו מחיר, איכות,
+                    אדיבות
+                  </div>
+                  <div class="cabinet__tabs-box">
+                    <div class="main__strong color-grey font-bold">אין ביקורות עדיין</div>
+                    <div class="main__text mTop10 color-grey6">ביקורות יופיעו לאחר שתיצור או תסיים מטלה</div>
+                  </div>
+                </div>
+                <div class="cabinet__tabs-content tab-2">
+                  <div class="main__title font-bold">היתרה שלך 0 בונוסים
+                  </div>
+                  <div class="cabinet__tabs-block">
+                    <div class="cabinet__tabs-block-top">
+                      <div class="main__title font-bold">היסטוריית תפעול
+                      </div>
+                      <select name="" id="" class="field-select">
+                        <option value="">לחודש</option>
+                        <option value="">לחודש</option>
+                        <option value="">לחודש</option>
+                        <option value="">לחודש</option>
+                      </select>
+                    </div>
+                    <div class="cabinet__tabs-block-links">
+                      <div class="main__text md color-grey">לחודש</div>
+                      <a href="" class="main__link main__link--dashed blue main__link--underline">מילוי חשבון</a>
+                      <a href="" class="main__link main__link--dashed blue main__link--underline">משיכה מהחשבון</a>
+                    </div>
+                    <div class="main__text color-grey6 mTop20 md">לא היו עסקאות בתקופה זו</div>
+                  </div>
+                  <div class="main__title font-bold mTop30">שאלות נפוצות</div>
+                  <div class="main__strong color-grey font-bold mTop15">בונוסים</div>
+                  <div class="main__text color-grey6 mTop5">ניתן להשתמש בבונוסים לתשלום עבור עבודתם של מבצעים. לא ניתן למשוך בונוסים
+                    מהחשבון.
+                  </div>
+                  <div class="main__strong color-grey font-bold mTop15">מהו הסכום המינימלי לחידוש חשבון?</div>
+                  <div class="main__text color-grey6 mTop5">400 רובל.</div>
+                </div>
+                <div class="cabinet__tabs-content tab-3">
+                  <div class="main__title font-bold">הפיצויים הם עניינו של הביטוח</div>
+                  <div class="main__text color-grey6 mTop5">חבר ביטוח ואל תשלם על משהו שנשבר בטעות במהלך העבודה. בית הביטוח VSK מפצה את הלקוחות שלך עד 100 אלף רובל. מחובר למשך 30 יום.
+                  </div>
+                  <a href="#" class="btn-blue minWidth mTop20">לחבר</a>
+                  <div class="main__title font-bold mTop40">פיצוי במקרה של מחלה ונכות</div>
+                  <div class="main__text color-grey6 mTop5">אם נאלצת לצאת לחופשת מחלה עקב מחלה או פציעה, שותפנו מנגו יעזור! ניתן להגיש בקשה לתשלום ביטוח מהיום הראשון למחלה, מנגו יפצה על אובדן הכנסה עד 500 רובל ליום, החל מהיום הרביעי למחלה. לדוגמה, אם קיבלת חופשת מחלה למשך 14 ימים עם שפעת, מנגו מפצה 5,000 רובל.</div>
+                  <a href="#" class="btn-blue minWidth mTop20">למד עוד</a>
+                </div>
+                <div class="cabinet__tabs-content tab-settings">
+                  <div class="cabinet__settings">
+                    <div class="cabinet__settings-tabs">
+                      <div class="cabinet__settings-tabs-buttons">
+                        <div class="cabinet__settings-tabs-button is-open" data-open="settings-1">הגדרות כלליות</div>
+                        <div class="cabinet__settings-tabs-button" data-open="settings-2">בְּטִיחוּת</div>
+                        <div class="cabinet__settings-tabs-button" data-open="settings-3">התראות</div>
+                      </div>
+                    </div>
+                    <div class="cabinet__settings-contents">
+                      <div class="cabinet__settings-content settings-1 is-open">
+                        <div class="main__title font-bold">מידע אישי</div>
+                        <div class="cabinet__settings-items">
+                          <input type="text" placeholder="שֵׁם" class="field-input withBg">
+                          <input type="text" placeholder="שֵׁם מִשׁפָּחָה" class="field-input withBg">
+                          <input type="text" placeholder="תאריך לידה" class="field-input withBg">
+                        </div>
+                        <div class="cabinet__settings-radioboxes">
+                          <div class="main__text font-bold md color-black">קוֹמָה</div>
+                          <label class="field-radiobox blue">
+                            <input type="radio" name="settings-radio-group">
+                            <span class="field-radiobox__mark"></span>
+                            <span class="field-radiobox__title">הזכר</span>
+                          </label>
+                          <label class="field-radiobox blue">
+                            <input type="radio" name="settings-radio-group">
+                            <span class="field-radiobox__mark"></span>
+                            <span class="field-radiobox__title">אִשָׁה</span>
+                          </label>
+                        </div>
+                        <div class="cabinet__settings-items">
+                          <input type="text" placeholder="עִיר" class="field-input withBg">
+                          <input type="text" placeholder="דוֹאַר" class="field-input withBg">
+                        </div>
+                        <button class="btn-blue minWidth mTop20">שמור נתונים אישיים</button>
+                        <div class="main__title font-bold mTop40">מספר טלפון</div>
+                        <div class="cabinet__settings-items cabinet__settings-items--string">
+                          <input type="text" placeholder="מספר ליצירת קשר" class="field-input withBg">
+                          <button class="btn-blue">להציל</button>
+                        </div>
+                      </div>
+                      <div class="cabinet__settings-content settings-2">
+                        <div class="main__title font-bold">שנה סיסמא
+                        </div>
+                        <div class="main__text md color-grey mTop20">צור סיסמה חדשה עם הדרישות הבאות:</div>
+                        <div class="main__text md color-grey mTop20">אורך - לפחות 8 תווים;</div>
+                        <div class="main__text md color-grey mTop20">אותיות גדולות;</div>
+                        <div class="main__text md color-grey mTop20">אוֹתִיוֹת קְטָנוֹת;</div>
+                        <div class="main__text md color-grey mTop20">מספרים או תווים מיוחדים: %, #, $ ואחרים.</div>
+                        <div class="cabinet__settings-items">
+                          <input type="text" placeholder="סיסמה חדשה" class="field-input withBg">
+                          <input type="text" placeholder="חזור על הסיסמה" class="field-input withBg">
+                        </div>
+                        <button class="btn-blue w220 mTop20">להציל</button>
+                      </div>
+                      <div class="cabinet__settings-content settings-3">
+                        <div class="main__title font-bold">לקבל התראות:
+                        </div>
+                        <div class="cabinet__settings-items cabinet__settings-items--column">
+                          <label class="field-radiobox blue">
+                            <input type="radio" name="settings-radio-group-2">
+                            <span class="field-radiobox__mark"></span>
+                            <span class="field-radiobox__title">הודעות מערכת</span>
+                          </label>
+                          <label class="field-radiobox blue">
+                            <input type="radio" name="settings-radio-group-2">
+                            <span class="field-radiobox__mark"></span>
+                            <span class="field-radiobox__title">אני רוצה לקבל חדשות מהאתר</span>
+                          </label>
+                        </div>
+                        <button class="btn-blue w220 mTop20">להציל</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cabinet__sidebar">
+        <div class="vacancies__sidebar-top">
+          <div class="main__text">להיות פרפורמר.
+            ותתחיל להרוויח.
+          </div>
+        </div>
+        <div class="cabinet__sidebar-box">
+          <div class="main__text lg2 font-bold color-grey">אנשי קשר מאומתים</div>
+          <ul class="cabinet__sidebar-contacts">
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <img src="images/icon-email-white.svg" alt="">
+                </span>
+                אימייל
+                maryblack9661@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <img src="images/icon-google.svg" alt="">
+                </span>
+                אימייל
+                maryblack9661@gmail.com
+              </a>
+            </li>
+          </ul>
+          <div class="main__text color-grey md mTop15">
+            הגדל את אמון המשתמש בעצמך - קשר את חשבונות הרשת החברתית שלך לפרופיל YouDo שלך. אנו מתחייבים לא לחשוף את אנשי
+            הקשר שלך.
+          </div>
+          <ul class="cabinet__sidebar-items">
+            <li>
+              <div class="icon">
+                <img src="images/icon-apple-logo.svg" alt="">
+              </div>
+              <div>
+                <div class="main__text color-grey md">שם זיהוי של אפל</div>
+                <a href="#" class="main__link main__link--underline">לִקְשׁוֹר</a>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="images/icon-apple-logo.svg" alt="">
+              </div>
+              <div>
+                <div class="main__text color-grey md">שם זיהוי של אפל</div>
+                <a href="#" class="main__link main__link--underline">לִקְשׁוֹר</a>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="images/icon-apple-logo.svg" alt="">
+              </div>
+              <div>
+                <div class="main__text color-grey md">שם זיהוי של אפל</div>
+                <a href="#" class="main__link main__link--underline">לִקְשׁוֹר</a>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="images/icon-apple-logo.svg" alt="">
+              </div>
+              <div>
+                <div class="main__text color-grey md">שם זיהוי של אפל</div>
+                <a href="#" class="main__link main__link--underline">לִקְשׁוֹר</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="main__text color-black lg2 font-bold mTop20">פרסומים חדשים</div>
+        <div class="main__text color-blue lg2 font-bold mTop5">בלוג</div>
+        <img src="images/img-vac.png" class="vacancies__sidebar-img mTop10" alt="">
+        <div class="main__text font-bold black lg mTop10">חסך חג ותשלום ללא מגע</div>
+        <ul class="vacancies__sidebar-itms">
+          <li>
+            <div class="main__text lg color-grey">איך להרשים לקוח</div>
+          </li>
+          <li>
+            <div class="main__text lg color-grey">אוברול מודרני. מה היא?</div>
+          </li>
+          <li>
+            <div class="main__text lg color-grey">עבודה נפלאה</div>
+          </li>
+          <li>
+            <div class="main__text lg color-grey">הפוך ל-Tarkett Master מוסמך</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LOGO</a>
+        <ul class="footer__menu">
+          <li><a href="#">חֲדָשׁוֹת</a></li>
+          <li><a href="#">ביקורות</a></li>
+          <li><a href="#">בלוג</a></li>
+          <li><a href="#">המבצעים המובילים של החודש</a></li>
+        </ul>
+        <div class="footer__contacts">
+          <a href="tel:0500000000" class="footer__phone"><span>050 XXX XXXX</span></a>
+          <a href="mailto:ustomer@mail.com" class="footer__email"><span>customer@mail.com</span></a>
+        </div>
+        <div class="footer__applications">
+          <a href="#" class="footer__link">
+            <img src="images/logo-google-play.svg" alt="">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="images/logo-app-store.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="main__text md color-dark2">© 2022 LOGO) תנאים והגבלות
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="images/icon-linkedin.svg" alt=""></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+          <a href="#"><img src="images/icon-skype.svg" alt=""></a>
+          <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="profile" href="http://gmpg.org/xfn/11">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/new-style.css">
+
+   <title>Chat</title>
+
+</head>
+
+<body class="chat-page wider-content">
+
+    <div class="wrapper">
+
+        <header class="header background-header header__user-is-authorized">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <a href="files/index.html" class="header__logo">LOGO</a>
+                    <div class="header__menu">
+                        <ul>
+                            <li><a href="#">בלוג</a></li>
+                            <li><a href="#">חֲדָשׁוֹת</a></li>
+                            <li><a href="#" class="is-active">המבצעים המובילים של החודש</a></li>
+                            <li><a href="#">ביקורות</a></li>
+                        </ul>
+                        <a href="tel:0500000000" class="header__phone"><span>050 XXX XXXX</span></a>
+                        <a href="mailto:ustomer@mail.com" class="header__email"><span>customer@mail.com</span></a>
+                    </div>
+                    <div class="header__user-menu">
+                        <a data-da="header__wrap-links, first, 1380" href="#" class="header__link">ההזמנות שלי</a>
+                        <div class="header__wrap-photo">
+                            <a href="chat.html" class="header__blockIcon">
+                                <span class="header__notification-circle">notification circle</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19.8614 1H4.13857C2.40791 1 1 2.45463 1 4.2426V15.206C1 16.9939 2.40791 18.4486 4.13857 18.4486H5.37018L5.39429 21.3112C5.39643 21.575 5.54309 21.8147 5.7728 21.9301C5.86617 21.977 5.96667 22 6.0667 22C6.21275 22 6.35773 21.9509 6.4777 21.8552L10.7499 18.4486H19.8614C21.5921 18.4486 23 16.9939 23 15.206V4.2426C23 2.45463 21.5921 1 19.8614 1ZM21.6549 15.206C21.6549 16.2277 20.8504 17.0589 19.8614 17.0589H10.5205C10.3719 17.0589 10.2274 17.1098 10.1096 17.2037L6.72752 19.9006L6.70939 17.7477C6.70621 17.3663 6.40603 17.0589 6.03688 17.0589H4.13857C3.14964 17.0589 2.34509 16.2277 2.34509 15.206V4.2426C2.34509 3.2209 3.14964 2.38968 4.13857 2.38968H19.8615C20.8504 2.38968 21.6549 3.2209 21.6549 4.2426L21.6549 15.206Z" fill="#444444"/>
+                                </svg>
+                            </a>
+                            <div id="user-message" class="header__blockIcon">
+                                <span class="header__notification-circle">notification circle</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21.0525 16.995L19.77 15.15C19.5949 14.8992 19.5007 14.6009 19.5 14.295V9C19.5 7.01088 18.7098 5.10322 17.3033 3.6967C15.8968 2.29018 13.9891 1.5 12 1.5C10.0109 1.5 8.10322 2.29018 6.6967 3.6967C5.29017 5.10322 4.5 7.01088 4.5 9V14.295C4.49927 14.6009 4.40506 14.8992 4.23 15.15L2.9475 16.995C2.75331 17.2102 2.62561 17.477 2.57985 17.7632C2.53409 18.0494 2.57222 18.3427 2.68964 18.6077C2.80706 18.8727 2.99873 19.098 3.24148 19.2563C3.48423 19.4147 3.76766 19.4993 4.0575 19.5H8.325C8.49713 20.3477 8.95705 21.1099 9.62681 21.6573C10.2966 22.2047 11.135 22.5038 12 22.5038C12.865 22.5038 13.7034 22.2047 14.3732 21.6573C15.043 21.1099 15.5029 20.3477 15.675 19.5H19.9425C20.2323 19.4993 20.5158 19.4147 20.7585 19.2563C21.0013 19.098 21.1929 18.8727 21.3104 18.6077C21.4278 18.3427 21.4659 18.0494 21.4201 17.7632C21.3744 17.477 21.2467 17.2102 21.0525 16.995ZM12 21C11.5358 20.9987 11.0833 20.8538 10.7047 20.5853C10.3261 20.3167 10.0397 19.9377 9.885 19.5H14.115C13.9603 19.9377 13.6739 20.3167 13.2953 20.5853C12.9166 20.8538 12.4642 20.9987 12 21ZM4.0575 18C4.0914 17.9685 4.12159 17.9333 4.1475 17.895L5.46 16.005C5.81013 15.5034 5.99855 14.9067 6 14.295V9C6 7.4087 6.63214 5.88258 7.75736 4.75736C8.88258 3.63214 10.4087 3 12 3C13.5913 3 15.1174 3.63214 16.2426 4.75736C17.3679 5.88258 18 7.4087 18 9V14.295C18.0014 14.9067 18.1899 15.5034 18.54 16.005L19.8525 17.895C19.8784 17.9333 19.9086 17.9685 19.9425 18H4.0575Z" fill="#444444"/>
+                                </svg>
+                                <div class="executor__messages">
+                                    <div class="executor__messagesTop">
+                                        <h4>הוֹדָעָה</h4>
+                                        <a href="#">סמן הכל כנקרא</a>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                        <li><a href="#"><span>מיקולה סדובי</span> סימנה אותך כאינסטלטור</a></li>
+                                    </ul>
+                                    <a href="#" class="executor__messagesMarkAllAsRead">סמן הכל כנקרא</a>
+                                </div>
+                            </div>
+                            <div id="links-user-menu" class="header__blockPhoto active">
+                                <img src="images/user-photo.jpg" alt="">
+                            </div>
+                            <div class="header__blockUserMenu">
+                                <div class="header__blockUserMenuTop">
+                                    <h4>ברוך הבא!</h4>
+                                </div>
+                                <ul>
+                                    <li class="header__blockUserMenuProfile"><a href="cabinet.html" class="header__link">פּרוֹפִיל</a></li>
+                                    <li class="header__blockUserMenuSettings"><a href="#" class="header__link">הגדרות</a></li>
+                                    <li class="header__blockUserMenuExit"><a href="#" class="header__link">כְּנִיסָה</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-da="header__blockUserMenu, last, 1600" class="header__wrap-links">
+                        <div class="header__wrapCreateAtask">
+                            <a href="#" id="create-a-task" class="header__link create-a-task">צור משימה</a>
+                            <div class="header__blockCreateAtask">
+                                <ul class="header__blockCreateAtaskList">
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג1</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                            <li><a href="#">טקסט דג1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__there-subparagraphs">
+                                        <a href="#"><span>טקסט דג</span></a>
+                                        <ul>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                            <li><a href="#">טקסט דג</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="header__link">מצא משימה</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <button type="button" class="chat__open-sidebar">
+                    <svg width="58px" height="65px" viewBox="0 0 58 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#444444" stroke-width="2">
+                               <path d="M54,0 L2,0 C0.9,0 0,0.9 0,2 L21,33 C21,33.7 21.4,34.4 22,34.7 L22,62 L34,55 L34,34.7 C34.6,34.4 35,33.7 35,33 L56,2 C56,0.9 55.1,0 54,0 L54,0 Z"></path>
+                               <path d="M7,4 L23,28"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <div class="chat__items">
+                    <div class="chat__item">
+                        <div class="chat__wrapContent">
+                            <div id="contact-1" class="chat__content show-sms">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/ivana-madine.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    <p class="chat__contentDateOfMessages">היום</p>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message response">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-2" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    <p class="chat__contentDateOfMessages">אתמול</p>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message response">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="chat__contentDateOfMessages">היום</p>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message response">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat__message contact">
+                                        <div class="chat__messageWrapTextPhoto">
+                                            <div class="chat__messageBlockPhoto">
+                                                <img src="images/contact-1.jpg" alt="">
+                                            </div>
+                                            <div class="chat__messageWrapBlockText">
+                                                <p class="chat__messageNameAndDate">אוון סקוט, 11:38 בבוקר</p>
+                                                <div class="chat__messageBlockText">
+                                                    <p>הנה דוגמה: אם המוצר שלך הוא כלי לניהול פרויקטים, תוכל לאתר שלך הוא כלי לניהול פרויקטים, תוכל לאתר</p>
+                                                    <div class="element">element</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-3" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-3.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 3 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-4" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 4 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-5" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-5.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 5 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-6" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-6.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 6 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-7" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/chat-contact-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 7 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="contact-8" class="chat__content">
+                                <div class="chat__contentTop">
+                                    <div class="chat__contentTopBlockPhoto">
+                                        <img src="images/ivana-madine.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contentTopWrapNameActivity">
+                                        <p class="chat__contentTopName">איבן נאדיין</p>
+                                        <p class="chat__contentTopActivity active">
+                                            <span class="no-active">כרגע לא פעיל</span>
+                                            <span class="active">פעיל כעת</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__contentMessages">
+                                    contact 8 sms
+                                </div>
+                                <form action="#" class="chat__form">
+                                    <div class="wrap-field-submit">
+                                        <input required type="text" class="chat__reply-field" placeholder="לִכתוֹב">
+                                        <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.20693 0.181597L22.5688 8.18748C23.3845 8.52472 23.9305 9.28121 23.9939 10.1616C24.0572 11.0421 23.6251 11.8689 22.8661 12.3195L16.2481 16.2481L12.3195 22.866C11.8689 23.6251 11.0421 24.0572 10.1617 23.9939C9.2795 23.9305 8.52417 23.383 8.18749 22.5687L0.181597 3.20693C-0.182914 2.3254 0.00967719 1.35874 0.684208 0.684206C1.35874 0.00967646 2.3254 -0.182913 3.20693 0.181597ZM1.48041 2.66993L9.48626 22.0317C9.62095 22.3573 9.91103 22.5668 10.2625 22.5921C10.6139 22.6173 10.9311 22.4516 11.111 22.1486L14.8523 15.8461L9.91451 10.9082C9.64006 10.6338 9.64006 10.1889 9.91451 9.91442C10.1889 9.63998 10.6339 9.63998 10.9083 9.91443L15.8461 14.8522L22.1486 11.111C22.4516 10.9311 22.6174 10.6139 22.5921 10.2625C22.5668 9.91108 22.3574 9.621 22.0318 9.48628L2.66994 1.4804C2.14851 1.26479 1.77887 1.57713 1.678 1.678C1.57713 1.77886 1.2648 2.14851 1.48041 2.66993Z" fill="#474BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat__item">
+                        <aside id="chat-sidebar" class="chat__sidebar">
+                            <h1 class="chat__title-above-contacts">אנשי קשר</h1>
+                            <div class="chat__contents">
+                                <a href="#contact-1" class="chat__contact active">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">10</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-2" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">2</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-3" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-3.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">3</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-4" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">6</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-5" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-5.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">12</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-6" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-6.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אאת הקובץ שבו הרא א</p>
+                                            <span class="chat__number-of-sms">3</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-7" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-8" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-9" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact-10" class="chat__contact">
+                                    <div class="chat__contactBlockPhoto">
+                                        <img src="images/chat-contact-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="chat__contactWrapInfo">
+                                        <div class="chat__wrap-name-date">
+                                            <h5 class="chat__contactName">איבן נאדיין</h5>
+                                            <p class="chat__contactDate">10 בינואר</p>
+                                        </div>
+                                        <div class="chat__wrap-text">
+                                            <p>אתה יכול לשלוח לי את הקובץ שבו הרא אתה יכול לשלוח לי את הקובץ שבו הרא</p>
+                                            <span class="chat__number-of-sms">1</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                <div class="footer__top">
+                    <a href="index.html" class="footer__logo">LOGO</a>
+                    <ul class="footer__menu">
+                    <li><a href="#">חֲדָשׁוֹת</a></li>
+                    <li><a href="#">ביקורות</a></li>
+                    <li><a href="#">בלוג</a></li>
+                    <li><a href="#">המבצעים המובילים של החודש</a></li>
+                    </ul>
+                    <div class="footer__contacts">
+                    <a href="tel:0500000000" class="footer__phone"><span>050 XXX XXXX</span></a>
+                    <a href="mailto:ustomer@mail.com" class="footer__email"><span>customer@mail.com</span></a>
+                    </div>
+                    <div class="footer__applications">
+                    <a href="#" class="footer__link">
+                    <img src="images/logo-google-play.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__link">
+                    <img src="images/logo-app-store.svg" alt="">
+                    </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="main__text md color-dark2">© 2022 LOGO) תנאים והגבלות
+                    </div>
+                    <div class="footer__social">
+                    <a href="#"><img src="images/icon-linkedin.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-skype.svg" alt=""></a>
+                    <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/new-script.js"></script>
+</body>
+</html>
